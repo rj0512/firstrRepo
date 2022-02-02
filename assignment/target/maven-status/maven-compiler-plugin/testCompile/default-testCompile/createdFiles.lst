@@ -1,0 +1,4 @@
+tests/ArticleScenario.class
+tests/SignInScenario.class
+tests/LoginWebScenario.class
+tests/HomePageScenario.class

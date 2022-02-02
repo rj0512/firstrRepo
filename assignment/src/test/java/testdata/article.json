@@ -1,0 +1,19 @@
+{
+"addArticle":{
+  "articleTitle": "Test My First Article",
+  "articleAbout": "This about Testing",
+  "articleDesc": "Manual Testing and Automation Testing",
+  "tags": "tag1,tag2,tag3"
+
+},
+  "editArticle":{
+    "articleTitle": "Edit_Test My First Article",
+    "articleAbout": "Edit_This about Testing",
+    "articleDesc": "Edit_Manual Testing and Automation Testing",
+    "tags": "Edittag"
+
+  },
+  "addComment":{
+    "comment": "This is comment on article"
+  }
+}

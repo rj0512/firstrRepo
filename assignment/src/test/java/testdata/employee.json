@@ -1,0 +1,6 @@
+{
+  "email": "sa@mob.com",
+  "password": "Admin@123",
+  "username": "siteadmin",
+  "usernameerrormsg": "username is already taken."
+}

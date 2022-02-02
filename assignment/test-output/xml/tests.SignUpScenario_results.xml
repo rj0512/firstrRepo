@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="103.533">
+  <properties />
+  
+  
+            <testcase name="verifyEditArticle" time="13.023" classname="tests.SignUpScenario" />
+                <testcase name="verifySignUpwithUsedUsername" time="3.117" classname="tests.SignUpScenario" />
+                <testcase name="verifyAddComment" time="15.166" classname="tests.SignUpScenario" />
+                <testcase name="verifySignIn" time="4.054" classname="tests.SignUpScenario" />
+                <testcase name="verifyAddArticle" time="14.659" classname="tests.SignUpScenario" />
+                <testcase name="verifyDeleteComment" time="16.674" classname="tests.SignUpScenario" />
+                <testcase name="verifySignUpUser" time="2.810" classname="tests.SignUpScenario" />
+                <testcase name="verifyDeleteArticle" time="34.030" classname="tests.SignUpScenario" />
+      
+</testsuite>

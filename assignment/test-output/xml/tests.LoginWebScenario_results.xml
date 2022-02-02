@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="10.310">
+  <properties />
+            <testcase name="verifyLogin" time="10.310" classname="tests.LoginWebScenario">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;header_user_info&apos;]//a&apos; (tried for 10 second(s) with 500 milliseconds interval)"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='header_user_info']//a' (tried for 10 second(s) with 500 milliseconds interval)
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+  utilities.TestUtility.waitTillElementIsDisplayed(TestUtility.java:114)
+  utilities.TestUtility.clickOnElement(TestUtility.java:67)
+  pageobjects.Loginpage.verifyLogin(Loginpage.java:38)
+  tests.LoginWebScenario.verifyLogin(LoginWebScenario.java:17)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='header_user_info']//a"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'rjoshi-C02G509VMD6N', ip: 'fe80:0:0:0:1014:7b7e:784:b1ba%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50926742da5e7b411bba72eced39b67e, findElement {using=xpath, value=//*[@class='header_user_info']//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/tk/x9gncb3j19z...}, goog:chromeOptions: {debuggerAddress: localhost:60526}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60526/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50926742da5e7b411bba72eced39b67e
+  jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+  java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+  org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+  org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+  com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+  org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+  org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+  org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+  org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+  utilities.TestUtility.waitTillElementIsDisplayed(TestUtility.java:114)
+  utilities.TestUtility.clickOnElement(TestUtility.java:67)
+  pageobjects.Loginpage.verifyLogin(Loginpage.java:38)
+  tests.LoginWebScenario.verifyLogin(LoginWebScenario.java:17)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
